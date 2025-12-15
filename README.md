@@ -6,9 +6,10 @@ The robot detects a line using sensors and adjusts motor behavior in real time t
 
 ## System Description
 Sensor inputs are read by a microcontroller and processed using control logic to determine motor commands.
-The system operates in a closed loop, continuously correcting its trajectory based on sensor feedback.
+The system operates in a closed loop, continuously correcting its trajectory based on sensor feedback. IR sensors are used for path control and ultrasonic sensors are used for obstacle detection. 
 
 ## My Contributions
+- Mapped and integrated the full electrical system, including power distribution and component interfacing
 - Developed embedded C software for sensor reading and motor control
 - Implemented control logic using thresholds and state-based decisions
 - Debugged sensor noise and real-time behavior during testing
