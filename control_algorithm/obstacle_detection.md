@@ -28,3 +28,6 @@ Given more development time, this logic could be extended to include active line
 - Fixed-duration maneuvers were favored over complex search behaviors
 - Stability was prioritized over speed during obstacle handling
 
+## Control Flow Diagram
+![Line Following Flow](diagrams/obstacle_detection_flow.png)
+
