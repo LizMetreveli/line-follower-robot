@@ -1,4 +1,9 @@
-﻿#include "mbed.h"
+// Line-Follower Robot
+// Author: Elizaveti Metreveli
+// Description: Obstacle detection and avoidance behavior
+
+
+#include "mbed.h"
 #include "hcsr04.h"
 
 
@@ -188,7 +193,6 @@ int main()
         bool all_white = true;
 
 
-        // Assume sensor_values[5] is updated from your sensors before this check
         for (int i = 0; i < 5; ++i) {
             if (sensor_values[i] < 0.6f) {  // threshold for white detection
                 all_white = false;
@@ -232,7 +236,7 @@ int main()
         previous_error = e;
 
 
-        float output2=Kp2*e + Kd2*derivative ; // constant for controlling the speed of the wheels
+        float output2=Kp2*e + Kd2*derivative ; // constant for controlling the speed
 
 
    
@@ -299,6 +303,7 @@ int main()
 
 
 }
+
 
 
 
