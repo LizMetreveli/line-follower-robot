@@ -1,9 +1,9 @@
-﻿#include "mbed.h"
+// Line-Follower Robot
+// Author: Elizaveti Metreveli
+// Description: Implements line detection and steering control logic
 
 
-
-
-
+#include "mbed.h"
 
 AnalogIn S5(A3); //right
 AnalogIn S4(A4);
@@ -245,3 +245,4 @@ int main()
 
 
 }
+
