@@ -28,3 +28,7 @@ The simplified controller significantly reduced oscillation and improved overall
 - Simplifying control logic improved real-time stability
 - Speed modulation was more effective than aggressive steering corrections
 - A proportional-only approach was sufficient for the system constraints
+
+## Control Flow Diagram
+![Line Following Flow](diagrams/line_following_flow.png)
+
