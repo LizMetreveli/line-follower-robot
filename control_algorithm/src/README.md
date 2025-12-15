@@ -1,4 +1,3 @@
 # Source Code
 
-This folder contains the embedded C source code for the line-follower robot.
-
+This directory contains the embedded source code for the line-follower robot.
