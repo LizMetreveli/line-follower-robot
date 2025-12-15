@@ -24,10 +24,6 @@ PwmOut servo(D7);
 const float SPEED_FORWARD = 0.32f;
 
 
-
-
-
-
 void move_forward(){
     rightfor.write(SPEED_FORWARD);
     rightback.write(0.0f);
@@ -40,8 +36,6 @@ void STOP(){
     leftfor.write(0.0f);
     leftback.write(0.0f);
 }
-
-
 
 
 
@@ -136,9 +130,6 @@ bool white_detected = false;
 
 
 
-
-
-
 int main()
 {
     rightfor.period(0.02f); //Period for motors
@@ -154,12 +145,9 @@ int main()
 
 
 
-
-
-
     while (true) {
         sensor_values[0] = S1.read();          
-	sensor_values[1] = S2.read();
+		sensor_values[1] = S2.read();
         sensor_values[2] = S3.read();
         sensor_values[3] = S4.read();
         sensor_values[4] = S5.read();
@@ -184,7 +172,7 @@ int main()
                 white_timer.start();
             } else {
                 if (white_timer.elapsed_time() < 1.0s) {
-                    STOP();           // Stop your robot motors
+                    STOP();           
                     while(true);
                 } else {
                     white_timer.reset();
@@ -206,7 +194,7 @@ int main()
         previous_error = e;
 
 
-        float output2=Kp2*e + Kd2*derivative ; // constant for controlling the speed of the wheels
+        float output2=Kp2*e + Kd2*derivative ; // constant for controlling the speed 
 
 
        
@@ -251,6 +239,7 @@ int main()
 
 
 }
+
 
 
 
