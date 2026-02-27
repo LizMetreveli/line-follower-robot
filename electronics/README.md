@@ -7,8 +7,6 @@ During early testing, the servo motor could not be reliably powered from the mic
 To resolve this issue, I redesigned the power distribution by adding a dedicated 6V supply derived from the battery pack used for the DC motors. 
 This modification provided sufficient torque and stable operation for the steering servo.
 
-I also iteratively adjusted the servo wheel mounting height to improve mechanical alignment and steering response.
-
 ### Motor Driver Integration
 The motor drivers shown in the initial diagram were later replaced with a custom motor driver circuit.
 I updated the wiring and signal routing accordingly while maintaining compatibility with the existing control logic.
