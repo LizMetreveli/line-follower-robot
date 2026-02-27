@@ -21,4 +21,4 @@ The new sensor circuit significantly improved line-detection consistency and ove
 
 ### Documentation Note
 The wiring diagram included in this repository was created by me to support development and debugging.
-It is provided for reference purposes only; exact component selection and wiring details may vary.
+It is provided for reference purposes only. Exact components used were different.
