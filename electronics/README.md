@@ -15,7 +15,7 @@ I updated the wiring and signal routing accordingly while maintaining compatibil
 This change improved reliability and allowed better integration with the rest of the electrical system.
 
 ### Sensor Circuit Redesign
-The original Pololu IR sensors did not provide reliable readings during testing.
+The original IR sensors did not provide reliable readings during testing.
 As a result, I replaced them with a custom IR sensor array based on a discrete circuit design, including current-limiting resistors and appropriate signal conditioning.
 The new sensor circuit significantly improved line-detection consistency and overall system stability.
 
